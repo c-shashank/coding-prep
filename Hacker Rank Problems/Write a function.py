@@ -43,8 +43,4 @@ def is_leap(year):
         leap=True
     else:
         leap=False
-
-    
-    # Write your logic here
-    
     return leap
