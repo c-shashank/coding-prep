@@ -37,13 +37,14 @@ Explanation 0
 year = int(raw_input()) #(1) year = 1900
 print is_leap(year) #(2) year = 1900 Function Call to is_leap
 
-def is_leap(year): #(3) year= 1900
-    leap = False #(4) year= 1900, leap= False
-    if year%4==0: #(5) 1900%4==0 so enters the next line , leap= False
-        if year%100==0: #(6) 1900%100==0 so enters the next line , leap= False
-            leap = False #(7) leap=False 
-        elif year%400==0:
-            leap=True
+def is_leap(year):
+    leap = False
+    if (year%4==0 and year%100!=0 or year%400==0):
+        leap=True
     else:
         leap=False
-    return leap #(8)
+
+    
+    # Write your logic here
+    
+    return leap
