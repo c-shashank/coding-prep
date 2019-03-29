@@ -47,4 +47,3 @@ def is_leap(year): #(3) year= 1900
     else:
         leap=False
     return leap #(8)
-
